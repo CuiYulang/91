@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的图片网站</title>
+    <style>
+        /* 极简重置 & 全屏图片样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* 防止滚动条 */
+            background-color: #000; /* 备用背景色 */
+        }
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* 保持比例，完整显示图片 */
+            /* object-fit: cover; */ /* 保持比例，填充屏幕（可能裁剪） */
+        }
+    </style>
+</head>
+<body>
+    <!-- 替换 YOUR_IMAGE_URL 为你的图片地址 -->
+    <img src="https://th.bing.com/th/id/R.987f582c510be58755c4933cda68d525?rik=C0D21hJDYvXosw&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fupload%2fupc%2ftx%2fwallpaper%2f1305%2f16%2fc4%2f20990657_1368686545122.jpg&ehk=netN2qzcCVS4ALUQfDOwxAwFcy41oxC%2b0xTFvOYy5ds%3d&risl=&pid=ImgRaw&r=0" alt="展示的图片" class="fullscreen-image">
+</body>
+</html>
